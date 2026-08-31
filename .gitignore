@@ -1,0 +1,6 @@
+﻿backend/venv/
+frontend/node_modules/
+backend/.env
+backend/*.db
+**/__pycache__/
+backend/ml/saved_model/

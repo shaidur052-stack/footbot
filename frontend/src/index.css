@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..700,0..100,0..1&family=Karla:wght@300..700&family=IBM+Plex+Mono:wght@400;500&family=Hind+Siliguri:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+/* Class-based dark mode. Tailwind v4 needs this declared explicitly;
+   the default follows the OS setting, which we override with a toggle. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Karla', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-bn: 'Hind Siliguri', system-ui, sans-serif;
+
+  /* Light theme — semantic names, so components never hardcode a colour */
+  --bg: #FAFCFB;
+  --surface: #FFFFFF;
+  --surface-2: #F4F8F6;
+  --surface-3: #ECF5F2;
+  --text: #0B2E2A;
+  --text-dim: #5C6B68;
+  --text-faint: #8A9996;
+  --border: rgba(11, 46, 42, 0.10);
+  --border-strong: rgba(11, 46, 42, 0.18);
+  --brand: #0F766E;
+  --brand-hover: #0B2E2A;
+  --brand-text: #FFFFFF;
+  --accent: #E8A32D;
+  --danger: #B0453A;
+  --shadow: 0 1px 3px rgba(11, 46, 42, 0.06);
+}
+
+.dark {
+  /* Dark theme. Brand teal is lightened — #0F766E fails contrast on a
+     dark background, so the token shifts rather than the components. */
+  --bg: #0A1413;
+  --surface: #111E1C;
+  --surface-2: #162523;
+  --surface-3: #1B2E2B;
+  --text: #E8F0EE;
+  --text-dim: #93A9A5;
+  --text-faint: #6B807C;
+  --border: rgba(232, 240, 238, 0.10);
+  --border-strong: rgba(232, 240, 238, 0.18);
+  --brand: #2DD4BF;
+  --brand-hover: #5EEAD4;
+  --brand-text: #06201C;
+  --accent: #F0B849;
+  --danger: #E27C70;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.display {
+  font-family: var(--font-display);
+  font-variation-settings: 'opsz' 128, 'SOFT' 30, 'WONK' 1;
+  letter-spacing: -0.022em;
+}
+
+.tnum { font-variant-numeric: tabular-nums; }
+.mono { font-family: var(--font-mono); }
+.bn   { font-family: var(--font-bn); }
+
+/* Quieter scrollbars — the default Windows bar is visually loud */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 6px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}

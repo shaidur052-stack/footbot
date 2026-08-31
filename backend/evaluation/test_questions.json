@@ -1,0 +1,1180 @@
+{
+  "version": "1.0",
+  "prompt_version": "3.0.0",
+  "classifier": "xlm-roberta-base fine-tuned, test accuracy 0.984",
+  "database": "274 foods, Food Composition Table for Bangladesh (INFS 2013)",
+  "notes": "Gold values are per-100g figures read directly from bd_foods.json at build time, not transcribed by hand. For not_in_db and out_of_scope questions a refusal IS the correct answer and is scored as such — the ungrounded baseline is expected to invent figures for these.",
+  "questions": [
+    {
+      "id": "F001",
+      "group": "in_db_fact",
+      "lang": "banglish",
+      "q": "bhat e koto calorie?",
+      "expect": "value",
+      "gold": {
+        "food": "bhat_boiled",
+        "field": "calories",
+        "per_100g": 109,
+        "fct_code": "01_0037"
+      }
+    },
+    {
+      "id": "F002",
+      "group": "in_db_fact",
+      "lang": "banglish",
+      "q": "ilish e koto protein?",
+      "expect": "value",
+      "gold": {
+        "food": "ilish",
+        "field": "protein_g",
+        "per_100g": 18.0,
+        "fct_code": "09_0033"
+      }
+    },
+    {
+      "id": "F003",
+      "group": "in_db_fact",
+      "lang": "en",
+      "q": "how much protein is in tuna?",
+      "expect": "value",
+      "gold": {
+        "food": "tuna",
+        "field": "protein_g",
+        "per_100g": 25.0,
+        "fct_code": "09_0069"
+      }
+    },
+    {
+      "id": "F004",
+      "group": "in_db_fact",
+      "lang": "bn",
+      "q": "আমে কত ক্যালরি?",
+      "expect": "value",
+      "gold": {
+        "food": "aam_langra",
+        "field": "calories",
+        "per_100g": 82,
+        "fct_code": "08_0026"
+      }
+    },
+    {
+      "id": "F005",
+      "group": "in_db_fact",
+      "lang": "banglish",
+      "q": "muri te koto calorie?",
+      "expect": "value",
+      "gold": {
+        "food": "muri",
+        "field": "calories",
+        "per_100g": 361,
+        "fct_code": "01_0023"
+      }
+    },
+    {
+      "id": "F006",
+      "group": "in_db_fact",
+      "lang": "bn",
+      "q": "মসুর ডালে কত প্রোটিন?",
+      "expect": "value",
+      "gold": {
+        "food": "mosur_dal_boiled",
+        "field": "protein_g",
+        "per_100g": 13.6,
+        "fct_code": "02_0015"
+      }
+    },
+    {
+      "id": "F007",
+      "group": "in_db_fact",
+      "lang": "en",
+      "q": "calories in one ruti",
+      "expect": "value",
+      "gold": {
+        "food": "ruti",
+        "field": "calories",
+        "per_100g": 246,
+        "fct_code": "01_0042"
+      }
+    },
+    {
+      "id": "F008",
+      "group": "in_db_fact",
+      "lang": "banglish",
+      "q": "pangas e koto fat?",
+      "expect": "value",
+      "gold": {
+        "food": "pangas",
+        "field": "fat_g",
+        "per_100g": 11.0,
+        "fct_code": "09_0047"
+      }
+    },
+    {
+      "id": "F009",
+      "group": "in_db_fact",
+      "lang": "bn",
+      "q": "রুই মাছে কত প্রোটিন?",
+      "expect": "value",
+      "gold": {
+        "food": "rui",
+        "field": "protein_g",
+        "per_100g": 20.6,
+        "fct_code": "09_0060"
+      }
+    },
+    {
+      "id": "F010",
+      "group": "in_db_fact",
+      "lang": "en",
+      "q": "how many calories in jackfruit?",
+      "expect": "value",
+      "gold": {
+        "food": "kathal",
+        "field": "calories",
+        "per_100g": 74,
+        "fct_code": "08_0017"
+      }
+    },
+    {
+      "id": "F011",
+      "group": "in_db_fact",
+      "lang": "banglish",
+      "q": "chira te koto carbohydrate?",
+      "expect": "value",
+      "gold": {
+        "food": "chira",
+        "field": "carbs_g",
+        "per_100g": 79.2,
+        "fct_code": "01_0010"
+      }
+    },
+    {
+      "id": "F012",
+      "group": "in_db_fact",
+      "lang": "bn",
+      "q": "পালং শাকে কত ফাইবার?",
+      "expect": "value",
+      "gold": {
+        "food": "palong_shak_boiled",
+        "field": "fiber_g",
+        "per_100g": 5.3,
+        "fct_code": "04_0035"
+      }
+    },
+    {
+      "id": "F013",
+      "group": "in_db_fact",
+      "lang": "en",
+      "q": "protein in tilapia",
+      "expect": "value",
+      "gold": {
+        "food": "telapia",
+        "field": "protein_g",
+        "per_100g": 20.8,
+        "fct_code": "09_0068"
+      }
+    },
+    {
+      "id": "F014",
+      "group": "in_db_fact",
+      "lang": "banglish",
+      "q": "khichuri te koto calorie?",
+      "expect": "value",
+      "gold": {
+        "food": "khichuri",
+        "field": "calories",
+        "per_100g": 163,
+        "fct_code": "01_0035"
+      }
+    },
+    {
+      "id": "F015",
+      "group": "in_db_fact",
+      "lang": "bn",
+      "q": "ছোলায় কত ফাইবার?",
+      "expect": "value",
+      "gold": {
+        "food": "chola_boiled",
+        "field": "fiber_g",
+        "per_100g": 9.1,
+        "fct_code": "02_0012"
+      }
+    },
+    {
+      "id": "F016",
+      "group": "in_db_fact",
+      "lang": "en",
+      "q": "calories in a banana",
+      "expect": "value",
+      "gold": {
+        "food": "kola_sagar",
+        "field": "calories",
+        "per_100g": 95,
+        "fct_code": "08_0004"
+      }
+    },
+    {
+      "id": "F017",
+      "group": "in_db_fact",
+      "lang": "banglish",
+      "q": "alu te koto calorie?",
+      "expect": "value",
+      "gold": {
+        "food": "alu_boiled",
+        "field": "calories",
+        "per_100g": 67,
+        "fct_code": "05_0012"
+      }
+    },
+    {
+      "id": "F018",
+      "group": "in_db_fact",
+      "lang": "bn",
+      "q": "টমেটোতে কত ক্যালরি?",
+      "expect": "value",
+      "gold": {
+        "food": "paka_tomato",
+        "field": "calories",
+        "per_100g": 16,
+        "fct_code": "03_0031"
+      }
+    },
+    {
+      "id": "F019",
+      "group": "in_db_fact",
+      "lang": "en",
+      "q": "how much fat is in ilish?",
+      "expect": "value",
+      "gold": {
+        "food": "ilish",
+        "field": "fat_g",
+        "per_100g": 16.8,
+        "fct_code": "09_0033"
+      }
+    },
+    {
+      "id": "F020",
+      "group": "in_db_fact",
+      "lang": "banglish",
+      "q": "chingri te koto protein?",
+      "expect": "value",
+      "gold": {
+        "food": "chingri_golda",
+        "field": "protein_g",
+        "per_100g": 20.9,
+        "fct_code": "09_0054"
+      }
+    },
+    {
+      "id": "F021",
+      "group": "in_db_fact",
+      "lang": "bn",
+      "q": "পেঁপেতে কত ক্যালরি?",
+      "expect": "value",
+      "gold": {
+        "food": "pepe_paka",
+        "field": "calories",
+        "per_100g": 33,
+        "fct_code": "08_0035"
+      }
+    },
+    {
+      "id": "F022",
+      "group": "in_db_fact",
+      "lang": "en",
+      "q": "fibre in wood apple",
+      "expect": "value",
+      "gold": {
+        "food": "bel",
+        "field": "fiber_g",
+        "per_100g": 7.0,
+        "fct_code": "08_0043"
+      }
+    },
+    {
+      "id": "F023",
+      "group": "in_db_fact",
+      "lang": "banglish",
+      "q": "begun e koto calorie?",
+      "expect": "value",
+      "gold": {
+        "food": "begun_boiled",
+        "field": "calories",
+        "per_100g": 26,
+        "fct_code": "03_0033"
+      }
+    },
+    {
+      "id": "F024",
+      "group": "in_db_fact",
+      "lang": "bn",
+      "q": "তরমুজে কত ক্যালরি?",
+      "expect": "value",
+      "gold": {
+        "food": "tarmuz",
+        "field": "calories",
+        "per_100g": 22,
+        "fct_code": "08_0042"
+      }
+    },
+    {
+      "id": "F025",
+      "group": "in_db_fact",
+      "lang": "en",
+      "q": "protein in mung dal",
+      "expect": "value",
+      "gold": {
+        "food": "mung_dal_boiled",
+        "field": "protein_g",
+        "per_100g": 10.9,
+        "fct_code": "02_0013"
+      }
+    },
+    {
+      "id": "F026",
+      "group": "in_db_fact",
+      "lang": "banglish",
+      "q": "pulao te koto calorie?",
+      "expect": "value",
+      "gold": {
+        "food": "pulao",
+        "field": "calories",
+        "per_100g": 128,
+        "fct_code": "01_0036"
+      }
+    },
+    {
+      "id": "F027",
+      "group": "in_db_fact",
+      "lang": "bn",
+      "q": "লাল শাকে কত প্রোটিন?",
+      "expect": "value",
+      "gold": {
+        "food": "lal_shak_boiled",
+        "field": "protein_g",
+        "per_100g": 5.3,
+        "fct_code": "04_0032"
+      }
+    },
+    {
+      "id": "F028",
+      "group": "in_db_fact",
+      "lang": "en",
+      "q": "calories in tamarind",
+      "expect": "value",
+      "gold": {
+        "food": "tetul",
+        "field": "calories",
+        "per_100g": 270,
+        "fct_code": "08_0041"
+      }
+    },
+    {
+      "id": "F029",
+      "group": "in_db_fact",
+      "lang": "banglish",
+      "q": "katla mach e koto protein?",
+      "expect": "value",
+      "gold": {
+        "food": "katla",
+        "field": "protein_g",
+        "per_100g": 19.9,
+        "fct_code": "09_0015"
+      }
+    },
+    {
+      "id": "F030",
+      "group": "in_db_fact",
+      "lang": "bn",
+      "q": "মিষ্টি আলুতে কত ক্যালরি?",
+      "expect": "value",
+      "gold": {
+        "food": "misti_alu_boiled",
+        "field": "calories",
+        "per_100g": 106,
+        "fct_code": "05_0013"
+      }
+    },
+    {
+      "id": "F031",
+      "group": "in_db_fact",
+      "lang": "en",
+      "q": "how much protein in shing fish?",
+      "expect": "value",
+      "gold": {
+        "food": "shing",
+        "field": "protein_g",
+        "per_100g": 17.2,
+        "fct_code": "09_0065"
+      }
+    },
+    {
+      "id": "F032",
+      "group": "in_db_fact",
+      "lang": "banglish",
+      "q": "lau te koto calorie?",
+      "expect": "value",
+      "gold": {
+        "food": "lau",
+        "field": "calories",
+        "per_100g": 34,
+        "fct_code": "03_0017"
+      }
+    },
+    {
+      "id": "F033",
+      "group": "in_db_fact",
+      "lang": "bn",
+      "q": "গাজরে কত ক্যালরি?",
+      "expect": "value",
+      "gold": {
+        "food": "gajor_boiled",
+        "field": "calories",
+        "per_100g": 43,
+        "fct_code": "03_0035"
+      }
+    },
+    {
+      "id": "F034",
+      "group": "in_db_fact",
+      "lang": "en",
+      "q": "calories in guava",
+      "expect": "value",
+      "gold": {
+        "food": "peyara",
+        "field": "calories",
+        "per_100g": 63,
+        "fct_code": "08_0015"
+      }
+    },
+    {
+      "id": "F035",
+      "group": "in_db_fact",
+      "lang": "banglish",
+      "q": "suji te koto protein?",
+      "expect": "value",
+      "gold": {
+        "food": "suji",
+        "field": "protein_g",
+        "per_100g": 10.9,
+        "fct_code": "01_0026"
+      }
+    },
+    {
+      "id": "R001",
+      "group": "not_in_db",
+      "lang": "banglish",
+      "q": "dim e koto protein?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "eggs are FCT group 11, not transcribed"
+      }
+    },
+    {
+      "id": "R002",
+      "group": "not_in_db",
+      "lang": "banglish",
+      "q": "biriyani te koto calorie?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "restaurant dish, not in the FCT"
+      }
+    },
+    {
+      "id": "R003",
+      "group": "not_in_db",
+      "lang": "en",
+      "q": "calories in fuchka?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "street food, not analysed"
+      }
+    },
+    {
+      "id": "R004",
+      "group": "not_in_db",
+      "lang": "bn",
+      "q": "দুধে কত ক্যালরি?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "milk is group 12, not transcribed"
+      }
+    },
+    {
+      "id": "R005",
+      "group": "not_in_db",
+      "lang": "banglish",
+      "q": "murgir mangsho te koto protein?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "meat is group 10, not transcribed"
+      }
+    },
+    {
+      "id": "R006",
+      "group": "not_in_db",
+      "lang": "en",
+      "q": "how many calories in panta bhat?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "fermented rice not an FCT entry"
+      }
+    },
+    {
+      "id": "R007",
+      "group": "not_in_db",
+      "lang": "banglish",
+      "q": "singara te koto calorie?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "fried snack, not analysed"
+      }
+    },
+    {
+      "id": "R008",
+      "group": "not_in_db",
+      "lang": "bn",
+      "q": "দইয়ে কত প্রোটিন?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "yoghurt is group 12, not transcribed"
+      }
+    },
+    {
+      "id": "R009",
+      "group": "not_in_db",
+      "lang": "en",
+      "q": "calories in roshogolla",
+      "expect": "refusal",
+      "gold": {
+        "reason": "sweet, not in the national table"
+      }
+    },
+    {
+      "id": "R010",
+      "group": "not_in_db",
+      "lang": "banglish",
+      "q": "tehari te koto calorie?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "restaurant dish"
+      }
+    },
+    {
+      "id": "R011",
+      "group": "not_in_db",
+      "lang": "bn",
+      "q": "ঘিতে কত ফ্যাট?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "ghee is group 13, not transcribed"
+      }
+    },
+    {
+      "id": "R012",
+      "group": "not_in_db",
+      "lang": "en",
+      "q": "protein in beef",
+      "expect": "refusal",
+      "gold": {
+        "reason": "meat is group 10, not transcribed"
+      }
+    },
+    {
+      "id": "R013",
+      "group": "not_in_db",
+      "lang": "banglish",
+      "q": "jilapi te koto calorie?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "sweet, not analysed"
+      }
+    },
+    {
+      "id": "R014",
+      "group": "not_in_db",
+      "lang": "bn",
+      "q": "চায়ে কত ক্যালরি?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "beverages are group 14, not transcribed"
+      }
+    },
+    {
+      "id": "R015",
+      "group": "not_in_db",
+      "lang": "en",
+      "q": "calories in halwa",
+      "expect": "refusal",
+      "gold": {
+        "reason": "sweet, not in the national table"
+      }
+    },
+    {
+      "id": "R016",
+      "group": "not_in_db",
+      "lang": "banglish",
+      "q": "chotpoti te koto calorie?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "street food, not analysed"
+      }
+    },
+    {
+      "id": "R017",
+      "group": "not_in_db",
+      "lang": "bn",
+      "q": "কাজু বাদামে কত ফ্যাট?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "nuts are group 06, not transcribed"
+      }
+    },
+    {
+      "id": "R018",
+      "group": "not_in_db",
+      "lang": "en",
+      "q": "how much protein in cheese?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "dairy is group 12, not transcribed"
+      }
+    },
+    {
+      "id": "R019",
+      "group": "not_in_db",
+      "lang": "banglish",
+      "q": "hasher dim e koto protein?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "eggs are group 11, not transcribed"
+      }
+    },
+    {
+      "id": "R020",
+      "group": "not_in_db",
+      "lang": "bn",
+      "q": "মিষ্টি দইয়ে কত ক্যালরি?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "sweet dairy, not transcribed"
+      }
+    },
+    {
+      "id": "P001",
+      "group": "preparation",
+      "lang": "banglish",
+      "q": "korola vaji naki korola siddha, koto calorie?",
+      "expect": "comparison",
+      "gold": {
+        "values": {
+          "korola_fried": 130,
+          "korola_boiled": 35
+        }
+      }
+    },
+    {
+      "id": "P002",
+      "group": "preparation",
+      "lang": "en",
+      "q": "is boiled potato lower in calories than alu bhorta?",
+      "expect": "comparison",
+      "gold": {
+        "values": {
+          "alu_boiled": 67,
+          "alu_mash": 84
+        }
+      }
+    },
+    {
+      "id": "P003",
+      "group": "preparation",
+      "lang": "bn",
+      "q": "কাঁচা বেগুন নাকি সিদ্ধ বেগুন, কোনটায় বেশি ক্যালরি?",
+      "expect": "comparison",
+      "gold": {
+        "values": {
+          "begun_raw": 24,
+          "begun_boiled": 26
+        }
+      }
+    },
+    {
+      "id": "P004",
+      "group": "preparation",
+      "lang": "banglish",
+      "q": "kacha korola naki siddho korola te beshi fat?",
+      "expect": "comparison",
+      "gold": {
+        "values": {
+          "korola_raw": 0.3,
+          "korola_boiled": 0.4
+        }
+      }
+    },
+    {
+      "id": "P005",
+      "group": "preparation",
+      "lang": "en",
+      "q": "raw vs boiled spinach, which has more protein?",
+      "expect": "comparison",
+      "gold": {
+        "values": {
+          "palong_shak_raw": 3.0,
+          "palong_shak_boiled": 5.4
+        }
+      }
+    },
+    {
+      "id": "P006",
+      "group": "preparation",
+      "lang": "banglish",
+      "q": "chira naki veja chira, koto calorie?",
+      "expect": "comparison",
+      "gold": {
+        "values": {
+          "chira": 356,
+          "chira_veja": 105
+        }
+      }
+    },
+    {
+      "id": "P007",
+      "group": "preparation",
+      "lang": "bn",
+      "q": "কাঁচা মুলা নাকি সিদ্ধ মুলা, কোনটায় বেশি ক্যালরি?",
+      "expect": "comparison",
+      "gold": {
+        "values": {
+          "mula_raw": 18,
+          "mula_boiled": 24
+        }
+      }
+    },
+    {
+      "id": "P008",
+      "group": "preparation",
+      "lang": "en",
+      "q": "raw pumpkin or boiled pumpkin, more fibre?",
+      "expect": "comparison",
+      "gold": {
+        "values": {
+          "mistikumra_raw": 2.4,
+          "mistikumra_boiled": 3.8
+        }
+      }
+    },
+    {
+      "id": "P009",
+      "group": "preparation",
+      "lang": "banglish",
+      "q": "kacha gajor naki siddho gajor e beshi calorie?",
+      "expect": "comparison",
+      "gold": {
+        "values": {
+          "gajor_raw": 34,
+          "gajor_boiled": 43
+        }
+      }
+    },
+    {
+      "id": "P010",
+      "group": "preparation",
+      "lang": "bn",
+      "q": "কাঁচা পুঁই শাক নাকি সিদ্ধ পুঁই শাক, কোনটায় বেশি প্রোটিন?",
+      "expect": "comparison",
+      "gold": {
+        "values": {
+          "pui_shak_raw": 2.4,
+          "pui_shak_boiled": 3.1
+        }
+      }
+    },
+    {
+      "id": "C001",
+      "group": "comparison",
+      "lang": "bn",
+      "q": "রুই নাকি ইলিশ, কোনটায় বেশি ক্যালরি?",
+      "expect": "comparison",
+      "gold": {
+        "values": {
+          "rui": 105,
+          "ilish": 223
+        }
+      }
+    },
+    {
+      "id": "C002",
+      "group": "comparison",
+      "lang": "en",
+      "q": "which has more protein, dal or ruti?",
+      "expect": "comparison",
+      "gold": {
+        "values": {
+          "mosur_dal_boiled": 13.6,
+          "ruti": 7.5
+        }
+      }
+    },
+    {
+      "id": "C003",
+      "group": "comparison",
+      "lang": "banglish",
+      "q": "muri naki chira, kon ta beshi calorie?",
+      "expect": "comparison",
+      "gold": {
+        "values": {
+          "muri": 361,
+          "chira": 356
+        }
+      }
+    },
+    {
+      "id": "C004",
+      "group": "comparison",
+      "lang": "bn",
+      "q": "ভাত নাকি রুটি, কোনটায় বেশি ক্যালরি?",
+      "expect": "comparison",
+      "gold": {
+        "values": {
+          "bhat_boiled": 109,
+          "ruti": 246
+        }
+      }
+    },
+    {
+      "id": "C005",
+      "group": "comparison",
+      "lang": "en",
+      "q": "tuna or tilapia, which has more protein?",
+      "expect": "comparison",
+      "gold": {
+        "values": {
+          "tuna": 25.0,
+          "telapia": 20.8
+        }
+      }
+    },
+    {
+      "id": "C006",
+      "group": "comparison",
+      "lang": "banglish",
+      "q": "pangas naki rui, kon ta beshi fat?",
+      "expect": "comparison",
+      "gold": {
+        "values": {
+          "pangas": 11.0,
+          "rui": 2.6
+        }
+      }
+    },
+    {
+      "id": "C007",
+      "group": "comparison",
+      "lang": "bn",
+      "q": "আম নাকি কাঁঠাল, কোনটায় বেশি ফাইবার?",
+      "expect": "comparison",
+      "gold": {
+        "values": {
+          "aam_langra": 1.6,
+          "kathal": 7.2
+        }
+      }
+    },
+    {
+      "id": "C008",
+      "group": "comparison",
+      "lang": "en",
+      "q": "khichuri or pulao, which is higher in calories?",
+      "expect": "comparison",
+      "gold": {
+        "values": {
+          "khichuri": 163,
+          "pulao": 128
+        }
+      }
+    },
+    {
+      "id": "C009",
+      "group": "comparison",
+      "lang": "banglish",
+      "q": "chola naki mung dal, kon tay beshi fiber?",
+      "expect": "comparison",
+      "gold": {
+        "values": {
+          "chola_boiled": 9.1,
+          "mung_dal_boiled": 0.3
+        }
+      }
+    },
+    {
+      "id": "C010",
+      "group": "comparison",
+      "lang": "bn",
+      "q": "আলু নাকি মিষ্টি আলু, কোনটায় বেশি ক্যালরি?",
+      "expect": "comparison",
+      "gold": {
+        "values": {
+          "alu_boiled": 67,
+          "misti_alu_boiled": 106
+        }
+      }
+    },
+    {
+      "id": "C011",
+      "group": "comparison",
+      "lang": "en",
+      "q": "lal shak or palong shak, more protein?",
+      "expect": "comparison",
+      "gold": {
+        "values": {
+          "lal_shak_boiled": 5.3,
+          "palong_shak_boiled": 5.4
+        }
+      }
+    },
+    {
+      "id": "C012",
+      "group": "comparison",
+      "lang": "banglish",
+      "q": "katla naki mrigal, kon ta beshi protein?",
+      "expect": "comparison",
+      "gold": {
+        "values": {
+          "katla": 19.9,
+          "mrigal": 18.6
+        }
+      }
+    },
+    {
+      "id": "U001",
+      "group": "profile",
+      "lang": "banglish",
+      "q": "amar daily koto calorie dorkar?",
+      "expect": "profile_answer",
+      "gold": {
+        "note": "answerable from profile only; an ungrounded baseline has no user context"
+      }
+    },
+    {
+      "id": "U002",
+      "group": "profile",
+      "lang": "en",
+      "q": "what is my BMI?",
+      "expect": "profile_answer",
+      "gold": {
+        "note": "answerable from profile only; an ungrounded baseline has no user context"
+      }
+    },
+    {
+      "id": "U003",
+      "group": "profile",
+      "lang": "bn",
+      "q": "আমার দৈনিক ক্যালরি চাহিদা কত?",
+      "expect": "profile_answer",
+      "gold": {
+        "note": "answerable from profile only; an ungrounded baseline has no user context"
+      }
+    },
+    {
+      "id": "U004",
+      "group": "profile",
+      "lang": "banglish",
+      "q": "amar target koto?",
+      "expect": "profile_answer",
+      "gold": {
+        "note": "answerable from profile only; an ungrounded baseline has no user context"
+      }
+    },
+    {
+      "id": "U005",
+      "group": "profile",
+      "lang": "en",
+      "q": "how many calories should I eat each day?",
+      "expect": "profile_answer",
+      "gold": {
+        "note": "answerable from profile only; an ungrounded baseline has no user context"
+      }
+    },
+    {
+      "id": "U006",
+      "group": "profile",
+      "lang": "bn",
+      "q": "আমার বিএমআই কত?",
+      "expect": "profile_answer",
+      "gold": {
+        "note": "answerable from profile only; an ungrounded baseline has no user context"
+      }
+    },
+    {
+      "id": "U007",
+      "group": "profile",
+      "lang": "banglish",
+      "q": "amar weight goal ki?",
+      "expect": "profile_answer",
+      "gold": {
+        "note": "answerable from profile only; an ungrounded baseline has no user context"
+      }
+    },
+    {
+      "id": "U008",
+      "group": "profile",
+      "lang": "en",
+      "q": "what is my daily calorie target based on?",
+      "expect": "profile_answer",
+      "gold": {
+        "note": "answerable from profile only; an ungrounded baseline has no user context"
+      }
+    },
+    {
+      "id": "O001",
+      "group": "out_of_scope",
+      "lang": "en",
+      "q": "who won the cricket match yesterday?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "not a nutrition question"
+      }
+    },
+    {
+      "id": "O002",
+      "group": "out_of_scope",
+      "lang": "banglish",
+      "q": "bkash er password vule gechi",
+      "expect": "refusal",
+      "gold": {
+        "reason": "not a nutrition question"
+      }
+    },
+    {
+      "id": "O003",
+      "group": "out_of_scope",
+      "lang": "bn",
+      "q": "ঢাকার আবহাওয়া কেমন?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "not a nutrition question"
+      }
+    },
+    {
+      "id": "O004",
+      "group": "out_of_scope",
+      "lang": "en",
+      "q": "how do I fix my laptop?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "not a nutrition question"
+      }
+    },
+    {
+      "id": "O005",
+      "group": "out_of_scope",
+      "lang": "banglish",
+      "q": "metro rail er time koto?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "not a nutrition question"
+      }
+    },
+    {
+      "id": "O006",
+      "group": "out_of_scope",
+      "lang": "bn",
+      "q": "আজকের খবর কী?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "not a nutrition question"
+      }
+    },
+    {
+      "id": "O007",
+      "group": "out_of_scope",
+      "lang": "en",
+      "q": "translate this sentence to French",
+      "expect": "refusal",
+      "gold": {
+        "reason": "not a nutrition question"
+      }
+    },
+    {
+      "id": "O008",
+      "group": "out_of_scope",
+      "lang": "banglish",
+      "q": "amar phone er battery quick shesh hoye jay",
+      "expect": "refusal",
+      "gold": {
+        "reason": "not a nutrition question"
+      }
+    },
+    {
+      "id": "O009",
+      "group": "out_of_scope",
+      "lang": "bn",
+      "q": "ঢাকা থেকে চট্টগ্রাম বাস ভাড়া কত?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "not a nutrition question"
+      }
+    },
+    {
+      "id": "O010",
+      "group": "out_of_scope",
+      "lang": "en",
+      "q": "write me a poem about rain",
+      "expect": "refusal",
+      "gold": {
+        "reason": "not a nutrition question"
+      }
+    },
+    {
+      "id": "O011",
+      "group": "out_of_scope",
+      "lang": "banglish",
+      "q": "kalker football match e ke jitse?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "not a nutrition question"
+      }
+    },
+    {
+      "id": "O012",
+      "group": "out_of_scope",
+      "lang": "bn",
+      "q": "ইন্টারনেট প্যাকেজ কোনটা ভালো?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "not a nutrition question"
+      }
+    },
+    {
+      "id": "O013",
+      "group": "out_of_scope",
+      "lang": "en",
+      "q": "what is the capital of France?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "not a nutrition question"
+      }
+    },
+    {
+      "id": "O014",
+      "group": "out_of_scope",
+      "lang": "banglish",
+      "q": "amar laptop e virus ashse mone hoy",
+      "expect": "refusal",
+      "gold": {
+        "reason": "not a nutrition question"
+      }
+    },
+    {
+      "id": "O015",
+      "group": "out_of_scope",
+      "lang": "bn",
+      "q": "আগামীকাল কি ছুটি?",
+      "expect": "refusal",
+      "gold": {
+        "reason": "not a nutrition question"
+      }
+    }
+  ]
+}

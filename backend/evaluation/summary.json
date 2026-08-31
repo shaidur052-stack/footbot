@@ -1,0 +1,56 @@
+{
+  "summary": {
+    "nutribot": {
+      "accuracy": 70.0,
+      "hallucination": 0.0,
+      "citation": 100.0,
+      "refusal": 75.0
+    },
+    "baseline": {
+      "accuracy": 30.0,
+      "hallucination": 40.0,
+      "citation": 0.0,
+      "refusal": 25.0
+    }
+  },
+  "by_group": {
+    "in_db_fact": {
+      "nutribot": 66.66666666666667,
+      "baseline": 66.66666666666667
+    },
+    "not_in_db": {
+      "nutribot": 100.0,
+      "baseline": 0.0
+    },
+    "preparation": {
+      "nutribot": 100.0,
+      "baseline": 0.0
+    },
+    "comparison": {
+      "nutribot": 0.0,
+      "baseline": 0.0
+    },
+    "profile": {
+      "nutribot": 100.0,
+      "baseline": 0.0
+    },
+    "out_of_scope": {
+      "nutribot": 0.0,
+      "baseline": 100.0
+    }
+  },
+  "by_language": {
+    "bn": {
+      "nutribot": 33.333333333333336,
+      "baseline": 33.333333333333336
+    },
+    "banglish": {
+      "nutribot": 100.0,
+      "baseline": 0.0
+    },
+    "en": {
+      "nutribot": 66.66666666666667,
+      "baseline": 66.66666666666667
+    }
+  }
+}
