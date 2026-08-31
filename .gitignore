@@ -4,3 +4,10 @@ backend/.env
 backend/*.db
 **/__pycache__/
 backend/ml/saved_model/
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+node_modules/
+dist/
